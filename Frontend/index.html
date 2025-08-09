@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Sign In</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="top"></div>
+        <div class="bottom"></div>
+        <div class="center" id="login">
+
+            <h1>SkillSphere</h1>
+            <h2>Login In</h2>
+
+            <form id="signInForm">
+            <input type="email" id="signInEmail" placeholder="Enter your Email" required>
+            <input type="password" id="signInPassword" placeholder="Enter your Password" required>
+            <div class="submit-btn"> 
+            <button  type="submit">LOG IN</button>
+            </div>
+            <div class="navigate" >
+                <p id="showSignup">Don't have an account? Sign up</p></div>
+            <div id="message"></div>
+            <h2>&nbsp;</h2>
+            </form>
+        </div>
+        <div class="center" id="signup">
+
+            <h1>SkillSphere</h1>
+            <h2>Sign Up</h2>
+
+            <form id="signUpForm">
+            <input type="email" id="signUpEmail" placeholder="Enter your Email" required>
+            <input type="password"  id="signUpPassword" placeholder="Enter your Password" required>
+            <div class="submit-btn"> 
+            <button  type="submit">SIGN UP</button>
+            </div>
+            <div class="navigate">
+                <p id="showLogin">Already have an account? login in</p></div>
+            <div id="message"></div>
+            <h2>&nbsp;</h2>
+            </form>
+        </div>
+
+        
+    </div>
+
+    <script src="scripts/script.js"></script>
+    <script type="module" src="scripts/auth.js"></script>
+</body>
+
+</html>
