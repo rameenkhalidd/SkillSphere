@@ -397,7 +397,7 @@ header h1 {
 .course-card h3 {
   font-size: 1.2rem;
   margin-bottom: 8px;
-  color: #6d639c;
+  color: #110F24;
 }
 
 .course-card p {
@@ -409,7 +409,7 @@ header h1 {
 
 .course-card button {
   background: #6d639c;
-  color: #f2a09f;
+  color: #110F24;
   border: none;
   padding: 8px;
   cursor: pointer;

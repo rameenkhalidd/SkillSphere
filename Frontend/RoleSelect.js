@@ -53,9 +53,16 @@ toggleChipSelection("goalChips");
 
 // === Submit ===
 document.getElementById("submitLearner").addEventListener("click", function () {
-    alert("Form submitted!");
+    // Optionally, you can keep alert or remove it
+    // alert("Form submitted!");
+
+    // Close the modal (optional)
     document.getElementById("learnerModal").style.display = "none";
+
+    // Redirect to homePage.html
+    window.location.href = "homePage.html";
 });
+
 
 
 // === Mentor Modal Logic ===
