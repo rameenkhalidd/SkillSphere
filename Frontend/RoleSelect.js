@@ -1,4 +1,3 @@
-
 // === Modal Logic ===
 document.getElementById("learnerBtn").addEventListener("click", function () {
     document.getElementById("learnerModal").style.display = "block";
