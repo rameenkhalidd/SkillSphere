@@ -88,7 +88,7 @@ main {
     flex-basis: 0%;
 }
 
-.hero-section {
+.hero-section{
     top: 0;
     left: 0;
     width: 100%;
@@ -226,10 +226,127 @@ main {
 
 
 
-@media only screen and (max-width:991px) {
 
-    .nav-profile,
-    .nav-links {
+.mentor-feature-cards{
+    background-color: #110F24;
+    height: 100vh;
+
+}
+
+.feature-section {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+    text-align: center;
+    margin-bottom: 50px; 
+    padding-top: 100px;
+}
+
+.feature-text {
+    max-width: 500px;
+}
+
+.feature-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    color: #f7f7f4;
+}
+
+.feature-text p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    color: #f7f7f4;
+}
+
+
+/* Tutor Carousel Section */
+.tutor-carousel {
+    width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 40px 0;
+    position: relative;
+    background: transparent;
+}
+
+.tutor-track {
+    display: flex;
+    gap: 20px;
+    animation: scrollCards 20s linear infinite;
+}
+
+.tutor-track:hover {
+    animation-play-state: paused;
+}
+
+.tutor-card {
+    background: #f2a09f;
+    border: 2px solid black;
+    border-radius: 12px;
+    box-shadow: 6px 6px 0 hwb(359 57% 9% / 0.875);
+    padding: 12px;
+    width: 250px;
+    flex-shrink: 0;
+}
+
+.tutor-card .thumb {
+    background: #ebede4;
+    height: 150px;
+    border: 2px solid black;
+    border-radius: 6px;
+    margin-bottom: 8px;
+    overflow: hidden; /* to clip overflowing image */
+}
+
+.tutor-card .thumb img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 6px;
+    display: block;
+}
+
+
+.tutor-card .info h4 {
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+.tutor-card .info p {
+    font-size: 0.85rem;
+    margin-bottom: 8px;
+}
+
+.tutor-card .buy-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tutor-card .buy-row button {
+    background: #ffffff;
+    border: 2px solid black;
+    border-radius: 6px;
+    padding: 4px 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.tutor-card .price {
+    font-weight: bold;
+}
+
+/* Animation */
+@keyframes scrollCards {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+
+@media only screen and (max-width:991px){
+    .nav-profile, .nav-links{
         display: none;
     }
 
