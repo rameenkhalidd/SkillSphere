@@ -88,11 +88,7 @@ main {
     flex-basis: 0%;
 }
 
-<<<<<<< Updated upstream
 .hero-section {
-=======
-.hero-section{
->>>>>>> Stashed changes
     top: 0;
     left: 0;
     width: 100%;
@@ -135,7 +131,6 @@ main {
 
 .float4 {
     top: 55%;
-    /* left: 75%; */
     right: 13%;
     animation-duration: 8s;
     animation-delay: 2s;
@@ -150,7 +145,6 @@ main {
 
 .float6 {
     top: 23%;
-
     right: 7%;
     animation-duration: 8s;
     animation-delay: 2s;
@@ -232,12 +226,8 @@ main {
 
 
 
-<<<<<<< Updated upstream
 
 .mentor-feature-cards {
-=======
-.mentor-feature-cards{
->>>>>>> Stashed changes
     background-color: #110F24;
     height: 100vh;
 
@@ -250,11 +240,7 @@ main {
     align-items: center;
     gap: 60px;
     text-align: center;
-<<<<<<< Updated upstream
     margin-bottom: 50px;
-=======
-    margin-bottom: 50px; 
->>>>>>> Stashed changes
     padding-top: 100px;
 }
 
@@ -311,12 +297,8 @@ main {
     border: 2px solid black;
     border-radius: 6px;
     margin-bottom: 8px;
-<<<<<<< Updated upstream
     overflow: hidden;
     /* to clip overflowing image */
-=======
-    overflow: hidden; /* to clip overflowing image */
->>>>>>> Stashed changes
 }
 
 .tutor-card .thumb img {
@@ -357,7 +339,6 @@ main {
     font-weight: bold;
 }
 
-<<<<<<< Updated upstream
 
 header h1 {
   text-align: center;
@@ -465,17 +446,6 @@ header h1 {
 
     .nav-profile,
     .nav-links {
-=======
-/* Animation */
-@keyframes scrollCards {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-50%); }
-}
-
-
-@media only screen and (max-width:991px){
-    .nav-profile, .nav-links{
->>>>>>> Stashed changes
         display: none;
     }
 
