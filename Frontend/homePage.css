@@ -88,7 +88,7 @@ main {
     flex-basis: 0%;
 }
 
-.hero-section {
+.hero-section  {
     top: 0;
     left: 0;
     width: 100%;
@@ -341,57 +341,61 @@ main {
 
 
 header h1 {
-  text-align: center;
-  font-size: 2.5rem;
-  margin-bottom: 30px;
-  color: white;
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: white;
 }
 
 .courses-carousel {
-     width: 90%;
+    width: 90%;
     margin: 0 auto;
     overflow: hidden;
     padding: 180px 0;
     padding-bottom: 20px;
 }
-.courses-cards{
+
+.courses-cards {
     padding-top: 100px;
     background-color: #110F24;
     height: 100vh;
 
 }
+
 .courses-track {
-  display: flex;
-  gap: 20px;
-  animation: scrollCourses 25s linear infinite;
+    display: flex;
+    gap: 20px;
+    animation: scrollCourses 25s linear infinite;
 }
 
 .courses-track:hover {
-  animation-play-state: paused;
+    animation-play-state: paused;
 }
 
 .course-card {
-  background: #f2a09f;
-  border: 2px solid black;
-  border-radius: 12px; /* Border radius kept */
-  width: 230px;
-  flex-shrink: 0;
-  padding: 12px;
-  color: #6d639c;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+    background: #f2a09f;
+    border: 2px solid black;
+    border-radius: 12px;
+    /* Border radius kept */
+    width: 230px;
+    flex-shrink: 0;
+    padding: 12px;
+    color: #6d639c;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .course-card video {
-  width: 100%;
-  height: 130px;
-  object-fit: cover;
-  margin-bottom: 12px;
-  border: 2px solid black;
-  border-radius: 6px; /* Matches card style */
-  background: black;
+    width: 100%;
+    height: 130px;
+    object-fit: cover;
+    margin-bottom: 12px;
+    border: 2px solid black;
+    border-radius: 6px;
+    /* Matches card style */
+    background: black;
 }
 
 .course-card h3 {
@@ -401,10 +405,10 @@ header h1 {
 }
 
 .course-card p {
-  font-size: 0.9rem;
-  margin-bottom: 12px;
-  color: #5c506f;
-  flex-grow: 1;
+    font-size: 0.9rem;
+    margin-bottom: 12px;
+    color: #5c506f;
+    flex-grow: 1;
 }
 
 .course-card button {
@@ -418,16 +422,17 @@ header h1 {
 }
 
 .course-card button:hover {
-  background-color: #4e4671;
+    background-color: #4e4671;
 }
 
 @keyframes scrollCourses {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
 }
 
 /* Animation */
