@@ -28,7 +28,7 @@
             </div>
             <h1>Select role to get started!</h1>
             <div class="hero-buttons">
-                <a href="#" class="role-card mentor">
+                <a href="#" class="role-card mentor" id="mentorBtn">
                     <i class="fas fa-chalkboard-teacher"></i>
                     <span>Mentor</span>
                 </a>
@@ -58,7 +58,7 @@
             </div>
 
             <!-- Step 2 -->
-            <div class="learner-step" data-step="2" style="display:none;">
+            <div class="learner-step " data-step="2" style="display:none;">
                 <h2>Step 2: Select Interests</h2>
                 <div class="chip-container" id="interestChips">
                     <div class="chip">Web Development</div>
@@ -66,7 +66,7 @@
                     <div class="chip">UI/UX Design</div>
                     <div class="chip">Data Science</div>
                     <div class="chip">Cybersecurity</div>
-                </div>
+                </div class="navigation-btn">
                 <button class="prev-btn">Back</button>
                 <button class="next-btn">Next</button>
             </div>
@@ -79,7 +79,7 @@
                     <div class="chip">Learn New Skills</div>
                     <div class="chip">Build a Project</div>
                     <div class="chip">Prepare for Exams</div>
-                </div>
+                </div class="navigation-btn">
                 <button class="prev-btn">Back</button>
                 <button class="next-btn">Next</button>
             </div>
@@ -91,13 +91,84 @@
                 <p><b>Bio:</b> <span id="reviewBio"></span></p>
                 <p><b>Interests:</b> <span id="reviewInterests"></span></p>
                 <p><b>Goals:</b> <span id="reviewGoals"></span></p>
-                <button class="prev-btn">Back</button>
-                <button id="submitLearner">Submit</button>
+
+                <div class="navigation-btn">
+                    <button class="prev-btn">Back</button>
+                    <button id="submitLearner">Submit</button>
+                </div>
             </div>
         </div>
     </div>
 
     <!-- ===== LEARNER MODAL END ===== -->
+
+    <!-- ===== MENTOR MODAL START ===== -->
+    <div id="mentorModal" class="mentor-modal">
+        <div class="mentor-modal-content">
+            <span class="mentor-close">&times;</span>
+
+            <!-- Step 1 -->
+            <div class="mentor-step" data-step="1">
+                <h2 id="detail">Step 1: Your Details</h2>
+                <label>Name</label>
+                <input type="text" id="mentorName" placeholder="Enter your name">
+
+                <label>Bio</label>
+                <textarea id="mentorBio" placeholder="Write about your expertise and background"></textarea>
+
+                <button class="next-btn">Next</button>
+            </div>
+
+            <!-- Step 2 -->
+            <div class="mentor-step" data-step="2" style="display:none;">
+                <h2>Step 2: Select Expertise Areas</h2>
+                <div class="chip-container" id="expertiseChips">
+                    <div class="chip">Web Development</div>
+                    <div class="chip">AI</div>
+                    <div class="chip">UI/UX Design</div>
+                    <div class="chip">Data Science</div>
+                    <div class="chip">Cybersecurity</div>
+                    <div class="chip">Business Strategy</div>
+                    <div class="chip">Marketing</div>
+                </div>
+                <div class="navigation-btn">
+                    <button class="prev-btn">Back</button>
+                    <button class="next-btn">Next</button>
+                </div>
+            </div>
+
+            <!-- Step 3 -->
+            <div class="mentor-step" data-step="3" style="display:none;">
+                <h2>Step 3: Availability</h2>
+                <div class="chip-container" id="availabilityChips">
+                    <div class="chip">Weekdays</div>
+                    <div class="chip">Weekends</div>
+                    <div class="chip">Mornings</div>
+                    <div class="chip">Evenings</div>
+                </div>
+                <div class="navigation-btn">
+                    <button class="prev-btn">Back</button>
+                    <button class="next-btn">Next</button>
+                </div>
+            </div>
+
+            <!-- Step 4 -->
+            <div class="mentor-step" data-step="4" style="display:none;">
+                <h2>Step 4: Review & Submit</h2>
+                <p><b>Name:</b> <span id="reviewMentorName"></span></p>
+                <p><b>Bio:</b> <span id="reviewMentorBio"></span></p>
+                <p><b>Expertise Areas:</b> <span id="reviewExpertise"></span></p>
+                <p><b>Availability:</b> <span id="reviewAvailability"></span></p>
+
+                <div class="navigation-btn">
+                    <button class="prev-btn">Back</button>
+                    <button id="submitMentor">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ===== MENTOR MODAL END ===== -->
+
 
 </body>
 <script src="RoleSelect.js"></script>
