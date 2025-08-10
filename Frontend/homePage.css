@@ -88,7 +88,7 @@ main {
     flex-basis: 0%;
 }
 
-.hero-section{
+.hero-section {
     top: 0;
     left: 0;
     width: 100%;
@@ -117,6 +117,8 @@ main {
 .float2 {
     top: 80%;
     right: 4%;
+    top: 80%;
+    right: 4%;
     animation-duration: 8s;
     animation-delay: 2s;
 }
@@ -131,6 +133,7 @@ main {
 
 .float4 {
     top: 55%;
+    /* right: 13%; */
     right: 13%;
     animation-duration: 8s;
     animation-delay: 2s;
@@ -145,6 +148,7 @@ main {
 
 .float6 {
     top: 23%;
+
     right: 7%;
     animation-duration: 8s;
     animation-delay: 2s;
@@ -227,7 +231,7 @@ main {
 
 
 
-.mentor-feature-cards{
+.mentor-feature-cards {
     background-color: #110F24;
     height: 100vh;
 
@@ -240,7 +244,7 @@ main {
     align-items: center;
     gap: 60px;
     text-align: center;
-    margin-bottom: 50px; 
+    margin-bottom: 50px;
     padding-top: 100px;
 }
 
@@ -297,7 +301,8 @@ main {
     border: 2px solid black;
     border-radius: 6px;
     margin-bottom: 8px;
-    overflow: hidden; /* to clip overflowing image */
+    overflow: hidden;
+    /* to clip overflowing image */
 }
 
 .tutor-card .thumb img {
@@ -340,13 +345,20 @@ main {
 
 /* Animation */
 @keyframes scrollCards {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-50%); }
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
 }
 
 
-@media only screen and (max-width:991px){
-    .nav-profile, .nav-links{
+@media only screen and (max-width:991px) {
+
+    .nav-profile,
+    .nav-links {
         display: none;
     }
 
