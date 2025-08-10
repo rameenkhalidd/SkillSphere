@@ -88,11 +88,7 @@ main {
     flex-basis: 0%;
 }
 
-<<<<<<< Updated upstream
-.hero-section {
-=======
 .hero-section{
->>>>>>> Stashed changes
     top: 0;
     left: 0;
     width: 100%;
@@ -230,12 +226,7 @@ main {
 
 
 
-<<<<<<< Updated upstream
-@media only screen and (max-width:991px) {
 
-    .nav-profile,
-    .nav-links {
-=======
 .mentor-feature-cards{
     background-color: #110F24;
     height: 100vh;
@@ -356,7 +347,6 @@ main {
 
 @media only screen and (max-width:991px){
     .nav-profile, .nav-links{
->>>>>>> Stashed changes
         display: none;
     }
 
