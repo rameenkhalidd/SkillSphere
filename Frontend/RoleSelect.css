@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
     padding: 0;
@@ -8,11 +7,12 @@
 /* Body styling */
 body {
     font-family: Arial, sans-serif;
-   background: linear-gradient(135deg, #110f24, #1b1838);
+    background: linear-gradient(135deg, #110f24, #1b1838);
     color: white;
 }
-.logo{
-   
+
+.logo {
+
     margin: auto;
 }
 
@@ -30,9 +30,11 @@ body {
     font-size: 2.3rem;
     margin-bottom: 50px;
 }
-.hero-content{
+
+.hero-content {
     width: 100vw;
 }
+
 /* Role Cards Container */
 .hero-buttons {
     display: flex;
@@ -43,7 +45,8 @@ body {
 
 /* Role Cards */
 .role-card {
-    background-color: #F2A09F; /* Base button color */
+    background-color: #F2A09F;
+    /* Base button color */
     padding: 30px 40px;
     border-radius: 15px;
     text-decoration: none;
@@ -59,9 +62,9 @@ body {
     font-weight: bold;
 
     /* Smooth animation for hover */
-    transition: transform 0.28s ease, 
-                box-shadow 0.28s ease, 
-                background-color 0.28s ease;
+    transition: transform 0.28s ease,
+        box-shadow 0.28s ease,
+        background-color 0.28s ease;
     will-change: transform;
 }
 
@@ -72,7 +75,8 @@ body {
 
 /* Hover effects */
 .role-card:hover {
-    background-color: #d6807e; /* Slightly darker hover color */
+    background-color: #d6807e;
+    /* Slightly darker hover color */
     transform: translateY(-8px) scale(1.05);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
 }
@@ -84,7 +88,74 @@ body {
         height: 150px;
         font-size: 1rem;
     }
+
     .role-card i {
         font-size: 2.5rem;
     }
+}
+
+/* Modal Styles */
+
+.learner-modal h2 {
+    color: #1b1838
+}
+
+.learner-modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.learner-modal-content {
+    background: white;
+    margin: 10% auto;
+    padding: 20px;
+    width: 50%;
+    height: 70%;
+    border-radius: 8px;
+}
+
+.learner-close {
+    float: right;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+input,
+textarea {
+    background-color: #f4e7e7;
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0 15px;
+    border: 1px solid #6D639C;
+    border-radius: 5px;
+}
+
+button {
+    padding: 8px 15px;
+    margin-top: 10px;
+}
+
+.chip-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.chip {
+    padding: 8px 12px;
+    background: #f1f1f1;
+    border-radius: 20px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.chip.selected {
+    background: #007BFF;
+    color: white;
 }
