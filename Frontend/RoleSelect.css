@@ -1,0 +1,90 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+   background: linear-gradient(135deg, #110f24, #1b1838);
+    color: white;
+}
+.logo{
+   
+    margin: auto;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    padding: 0px;
+}
+
+.hero-content h1 {
+    font-size: 2.3rem;
+    margin-bottom: 50px;
+}
+.hero-content{
+    width: 100vw;
+}
+/* Role Cards Container */
+.hero-buttons {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Role Cards */
+.role-card {
+    background-color: #F2A09F; /* Base button color */
+    padding: 30px 40px;
+    border-radius: 15px;
+    text-decoration: none;
+    color: white;
+    width: 160px;
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: bold;
+
+    /* Smooth animation for hover */
+    transition: transform 0.28s ease, 
+                box-shadow 0.28s ease, 
+                background-color 0.28s ease;
+    will-change: transform;
+}
+
+.role-card i {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+/* Hover effects */
+.role-card:hover {
+    background-color: #d6807e; /* Slightly darker hover color */
+    transform: translateY(-8px) scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+    .role-card {
+        width: 150px;
+        height: 150px;
+        font-size: 1rem;
+    }
+    .role-card i {
+        font-size: 2.5rem;
+    }
+}
