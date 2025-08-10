@@ -115,15 +115,15 @@ main {
 }
 
 .float2 {
-    top: 85%;
-    left: 87%;
+    top: 80%;
+    right: 4%;
     animation-duration: 8s;
     animation-delay: 2s;
 }
 
 .float3 {
     top: 90%;
-    left: 10%;
+    left: 4%;
     animation-duration: 5s;
     animation-delay: 1s;
 }
@@ -131,21 +131,21 @@ main {
 
 .float4 {
     top: 55%;
-    left: 75%;
+    right: 13%;
     animation-duration: 8s;
     animation-delay: 2s;
 }
 
 .float5 {
     top: 65%;
-    left: 23%;
+    left: 15%;
     animation-duration: 5s;
     animation-delay: 1s;
 }
 
 .float6 {
     top: 23%;
-    left: 87%;
+    right: 7%;
     animation-duration: 8s;
     animation-delay: 2s;
 }
